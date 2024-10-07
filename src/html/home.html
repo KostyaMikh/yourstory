@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourStory - Interactive Storytelling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <script>
+        function scrollToFeatureCard() {
+            const featureCard = document.querySelector('.stories .story-card');
+            if (featureCard) {
+                featureCard.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>YourStory</h1>
+            <nav class="menu">
+                <a href="#" class="menu-item">Home</a>
+                <a href="#" class="menu-item">Stories</a>
+                <a href="#" class="menu-item">About</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>Welcome to YourStory — Travel Through Adventures</h2>
+                <p>Embark on a journey where you decide the path. At YourStory, each choice you make takes you to new
+                    and unexpected destinations within the story. Dive into thrilling adventures, explore mysterious
+                    worlds, and experience countless endings shaped by your decisions. It’s not just about reading —
+                    it’s about traveling through narratives and discovering where each choice will lead you.
+
+                    The adventure awaits. Where will your story take you?
+                </p>
+                <a class="btn" onclick="scrollToFeatureCard()">Begin Your Adventure</a>
+            </section>
+
+            <section class="stories">
+                <div class="story-card">
+                    <div class="story-icon" style="display: inline-block; vertical-align: middle;">🏙</div>
+                    <h3 style="display: inline-block; margin-left: 10px;">The Lost City of Zaira</h3>
+                    <p>
+                        Step into the role of an explorer searching for the legendary Lost City of Zaira. Your journey
+                        will take you through dense jungles, ancient temples, and forgotten ruins. But be warned — each
+                        choice you make brings you closer to the truth, or deeper into danger.
+                    </p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon" style="display: inline-block; vertical-align: middle;">🕰</div>
+                    <h3 style="display: inline-block; margin-left: 10px;">The Time Traveler’s Dilemma</h3>
+                    <p>
+                        You’ve discovered the secret of time travel, but with great power comes great responsibility.
+                        Travel through different eras, from medieval kingdoms to futuristic cities, and decide how you
+                        will shape the past, present, and future. Every decision ripples through time — what legacy will
+                        you leave?
+                    </p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon" style="display: inline-block; vertical-align: middle;">👹</div>
+                    <h3 style="display: inline-block; margin-left: 10px;">Escape from the Underworld</h3>
+                    <p>
+                        You’ve been trapped in the Underworld, and the only way out is through. Face mythological
+                        creatures, solve ancient riddles, and choose your alliances wisely. One wrong step could leave
+                        you lost forever — can you escape the realm of the dead?
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 YourStory. Let your imagination flourish.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
